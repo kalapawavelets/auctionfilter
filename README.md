@@ -5,6 +5,7 @@ Change the file name in the get_data.py file.
 
 Create a new virtual environment using this command in bash shell:
 python3 -m venv auction_ve
+
 source auction_ve/bin/activate
 
 pip install -r requirements.txt

@@ -17,6 +17,7 @@ df['sold_price_average'] = 0
 
 #buy_proirity (1 - Must buy, 2 - Good, , 3 - Unknown, 4 - Do not buy)
 df['buy_priority'] = 3
+df['Notes'] = "None"
 
 #TODO:This is to remove those x000D from the cells
 # for str_col in df.select_dtypes(include=['object']).columns:

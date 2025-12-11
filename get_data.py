@@ -3,11 +3,11 @@ import tabula
 import xlsxwriter
 from openpyxl import Workbook
 
-file = "12_1_2025_549.pdf"
+file = "12_11_2025_current_cars.pdf"
 
 tabula.convert_into(file, "converted_records_all.csv", output_format="csv", lattice=True, stream=False,  pages="all" )
 
-df = pd.read_csv("converted_records_all.csv")
+df = pd.read_csv("converted_records_all.csv", on_bad_lines='skip')
 
 df['Manual'] = 'No'
 df['CVT'] = 'No'
